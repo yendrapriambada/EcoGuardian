@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">EcoGuardian</string>
+    <string name="title_tsunami">TSUNAMI</string>
+    <string name="amatilah_video_ini">Amatilah video ini!</string>
+    <string name="ayo_tuliskan_bagaimana_tsunami_dapat_terjadi_dan_apa_saja_dampak_yang_ditimbulkan_dari_tsunami_tersebut">Ayo tuliskan bagaimana tsunami dapat terjadi dan apa saja dampak yang ditimbulkan dari tsunami tersebut!</string>
     <string name="author">Muhammad Fikri F</string>
 </resources>

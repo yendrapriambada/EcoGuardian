@@ -12,6 +12,9 @@
         android:theme="@style/Theme.EcoGuardian"
         tools:targetApi="31">
         <activity
+            android:name=".TemplateVideoMateriActivity"
+            android:exported="false"/>
+        <activity
             android:name=".TenActivity"
             android:exported="false" />
         <activity
