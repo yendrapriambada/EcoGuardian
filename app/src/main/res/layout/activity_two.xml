@@ -39,30 +39,21 @@
       app:layout_constraintEnd_toEndOf="parent"
       />
 
-  <ImageView
-      android:id="@+id/img_bg_intro"
-      android:layout_width="0dp"
-      android:layout_height="0dp"
-      android:src="@drawable/asset_bg_introduction"
-      android:layout_marginTop="16dp"
-      android:layout_marginBottom="16dp"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/img_intro_text"
-      app:layout_constraintBottom_toTopOf="@id/img_grass1"
-      />
-
-
   <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="tes"
+      android:id="@+id/tv_intro"
       style="@style/TextStyleHandyMan"
-      app:layout_constraintTop_toTopOf="@id/img_bg_intro"
-      app:layout_constraintStart_toStartOf="parent"
+      android:layout_width="350dp"
+      android:layout_height="480dp"
+      android:background="@drawable/asset_bg_introduction"
+      android:justificationMode="inter_word"
+      android:padding="16dp"
+      android:text="@string/kata_pengantar"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintBottom_toBottomOf="@id/img_bg_intro"/>
-
+      app:layout_constraintHorizontal_bias="0.491"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/img_intro_text"
+      app:layout_constraintVertical_bias="0.133" />
 
   <ImageView
       android:id="@+id/img_grass1"
