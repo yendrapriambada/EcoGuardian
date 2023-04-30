@@ -12,6 +12,33 @@
         android:theme="@style/Theme.EcoGuardian"
         tools:targetApi="31">
         <activity
+            android:name=".TenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SevenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FourActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TwoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
