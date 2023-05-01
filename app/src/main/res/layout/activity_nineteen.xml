@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#96D5ED"
-    tools:context=".SeventeenActivity">
+    tools:context=".NineActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="24dp"
             android:gravity="center"
-            android:text="@string/dampak_tsunami_terhadap_lingkungan"
+            android:text="@string/tanah_longsor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,7 @@
             android:id="@+id/textView4"
             style="@style/TextRegularPoppins"
             android:layout_width="0dp"
-            android:layout_height="430dp"
+            android:layout_height="160dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="-50dp"
             android:background="@drawable/asset_bg_note"
@@ -45,8 +45,7 @@
             android:paddingTop="30dp"
             android:paddingEnd="70dp"
             android:paddingBottom="30dp"
-            android:text="@string/dampak_positif_tsunami"
-            android:textStyle="normal"
+            android:text="@string/tanah_longsor_atau_sering_disebut_gerakan_tanah_merupakan_suatu_peristiwa_geologi_yang_terjadi_akibat_pergerakan_masa_batuan_atau_tanah"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -54,30 +53,21 @@
             android:id="@+id/textView5"
             style="@style/TextRegularPoppins"
             android:layout_width="0dp"
-            android:layout_height="360dp"
-            android:layout_marginStart="-100dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="-50dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/asset_bg_note"
             android:importantForAutofill="no"
             android:justificationMode="inter_word"
-            android:paddingStart="120dp"
-            android:paddingTop="30dp"
+            android:paddingStart="70dp"
+            android:paddingTop="50dp"
             android:paddingEnd="30dp"
-            android:paddingBottom="30dp"
-            android:text="@string/dampak_negatif_tsunami"
+            android:paddingBottom="50dp"
+            android:text="@string/penyebab_tanah_longsor"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/asset_gambar_tsunami"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
