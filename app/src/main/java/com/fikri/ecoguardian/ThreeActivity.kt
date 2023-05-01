@@ -1,11 +1,22 @@
 package com.fikri.ecoguardian
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.fikri.ecoguardian.databinding.ActivityThreeBinding
 
 class ThreeActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityThreeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_three)
+        binding = ActivityThreeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.apply {
+            btnStudy.setOnClickListener {
+                Intent(this@ThreeActivity, FourActivity::class.java).also { startActivity(it) }
+            }
+        }
     }
 }

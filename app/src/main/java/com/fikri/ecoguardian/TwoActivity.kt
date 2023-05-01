@@ -13,15 +13,17 @@ class TwoActivity : AppCompatActivity() {
         binding = ActivityTwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnPrev.setOnClickListener {
-            Intent(this@TwoActivity, MainActivity::class.java).also {
-                startActivity(it)
+        binding.apply {
+            btnPrev.setOnClickListener {
+                Intent(this@TwoActivity, MainActivity::class.java).also {
+                    startActivity(it)
+                }
             }
-        }
 
-        binding.btnNext.setOnClickListener {
-            Intent(this@TwoActivity, ThreeActivity::class.java).also {
-                startActivity(it)
+            btnNext.setOnClickListener {
+                Intent(this@TwoActivity, ThreeActivity::class.java).also {
+                    startActivity(it)
+                }
             }
         }
 

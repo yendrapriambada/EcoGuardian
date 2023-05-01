@@ -7,6 +7,185 @@
     android:background="@color/blue_sky"
     tools:context=".ThreeActivity">
 
+    <ImageView
+        android:id="@+id/img_leaf1"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-76dp"
+        android:rotation="160"
+        android:src="@drawable/asset_leaf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_twig1"
+        android:layout_width="208dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="-99dp"
+        android:layout_marginBottom="-8dp"
+        android:rotation="-42"
+        android:src="@drawable/asset_twig"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_leaf2"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="-118dp"
+        android:src="@drawable/asset_leaf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="208dp"
+        android:layout_height="210dp"
+        android:src="@drawable/asset_twig"
+        android:rotation="158"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="-126dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="-32dp"
+        android:src="@drawable/asset_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_twig1"
+        />
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/asset_text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_cloud1"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:src="@drawable/asset_cloud"
+        android:scaleX="-1"
+        android:layout_marginTop="-40dp"
+        android:layout_marginStart="-72dp"
+        app:layout_constraintTop_toBottomOf="@id/img_leaf2"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:src="@drawable/asset_sea"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-65dp"
+        android:layout_marginBottom="-16dp"
+        android:layout_marginStart="-32dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_study"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:src="@drawable/asset_leaf"
+        android:layout_marginEnd="-75dp"
+        android:layout_marginBottom="-8dp"
+        android:rotation="-62"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:src="@drawable/asset_leaf"
+        android:rotation="-80"
+        android:layout_marginStart="-36dp"
+        android:layout_marginBottom="-50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="105dp"
+        android:src="@drawable/asset_twig"
+        android:rotation="66"
+        android:layout_marginStart="-50dp"
+        android:layout_marginBottom="-36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    
+    <ImageView
+        android:id="@+id/img_study"
+        android:layout_width="160dp"
+        android:layout_height="250dp"
+        android:src="@drawable/asset_photo_1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/img_cloud1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_games"
+        />
+
+    <ImageView
+        android:id="@+id/img_games"
+        android:layout_width="160dp"
+        android:layout_height="250dp"
+        android:src="@drawable/asset_photo_two"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@id/img_cloud1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_study"
+        />
+
+    <Button
+        android:id="@+id/btn_study"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/study"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:cornerRadius="40dp"
+        app:layout_constraintTop_toBottomOf="@id/img_study"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_games"
+        />
+
+    <Button
+        android:id="@+id/btn_games"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/games"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        app:cornerRadius="40dp"
+        app:layout_constraintTop_toBottomOf="@id/img_games"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_study"
+        />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
