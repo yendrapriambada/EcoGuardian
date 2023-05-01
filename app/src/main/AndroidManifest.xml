@@ -12,6 +12,9 @@
         android:theme="@style/Theme.EcoGuardian"
         tools:targetApi="31">
         <activity
+            android:name=".TwentyThreeActivity"
+            android:exported="false" />
+        <activity
             android:name=".TwentyOneActivity"
             android:exported="false" />
         <activity
