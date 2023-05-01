@@ -7,49 +7,18 @@
     android:background="@color/blue_sky"
     tools:context=".SixActivity">
 
+    <include
+        layout="@layout/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
     <ImageView
-        android:id="@+id/img_cloud4"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:src="@drawable/asset_cloud"
-        android:layout_marginEnd="-58dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:src="@drawable/asset_six"/>
 
     <ImageView
-        android:id="@+id/img_cloud5"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:src="@drawable/asset_cloud"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="-70dp"
-        app:layout_constraintTop_toBottomOf="@id/img_cloud4"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <ImageView
-        android:id="@+id/img_cloud6"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="-80dp"
-        android:src="@drawable/asset_cloud"
-        app:layout_constraintTop_toBottomOf="@id/img_cloud5"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <ImageView
-        android:layout_width="130dp"
-        android:layout_height="70dp"
-        android:src="@drawable/asset_cloud"
-        android:layout_marginStart="-80dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img_cloud6"
-        />
-
-
-    <ImageView
-        android:id="@+id/img_grass1"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:src="@drawable/asset_grass"
@@ -69,4 +38,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <ImageButton
+        android:id="@+id/btn_prev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/asset_button_prev"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/asset_btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

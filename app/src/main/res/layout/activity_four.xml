@@ -27,13 +27,11 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
-
-
         <TextView
             android:id="@+id/tv_instruction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Amatilah gambar di atas!"
+            android:text="@string/amati_gambar"
             android:fontFamily="@font/poppins_medium"
             android:textStyle="bold"
             android:textColor="#233906"
@@ -46,8 +44,7 @@
             android:id="@+id/tv_question1"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:text="apa didaerah sekitarmu terdapat perubahan lingkangan?
-ayo tuliskan apa saja yang menjadi faktor perubahan lingkungan!"
+            android:text="@string/question_page_four"
             android:fontFamily="@font/poppins"
             android:textColor="#233906"
             android:textSize="15sp"
