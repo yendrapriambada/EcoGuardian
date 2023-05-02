@@ -60,9 +60,6 @@
             android:name=".EightActivity"
             android:exported="false" />
         <activity
-            android:name=".SevenActivity"
-            android:exported="false" />
-        <activity
             android:name=".SixActivity"
             android:exported="false" />
         <activity
