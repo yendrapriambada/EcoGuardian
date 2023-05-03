@@ -15,7 +15,13 @@ class TwentyFiveActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@TwentyFiveActivity, TwentyThreeActivity::class.java).also {
+                Intent(this@TwentyFiveActivity, TemplateVideoMateriActivity::class.java).also {
+                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.pencemaran_udara))
+                    it.putExtra(
+                        SixActivity.EXTRA_DESC,
+                        getString(R.string.pencemaran_udara_instruksi)
+                    )
+                    it.putExtra(SixActivity.EXTRA_FROM, 23)
                     startActivity(it)
                 }
             }
@@ -23,7 +29,10 @@ class TwentyFiveActivity : AppCompatActivity() {
             btnNext.setOnClickListener {
                 Intent(this@TwentyFiveActivity, TemplateVideoMateriActivity::class.java).also {
                     it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.pencemaran_air))
-                    it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.pencemaran_air_instruksi))
+                    it.putExtra(
+                        SixActivity.EXTRA_DESC,
+                        getString(R.string.pencemaran_air_instruksi)
+                    )
                     it.putExtra(SixActivity.EXTRA_FROM, 25)
                     startActivity(it)
                 }

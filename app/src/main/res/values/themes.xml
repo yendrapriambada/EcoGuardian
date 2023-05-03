@@ -17,7 +17,7 @@
     <style name="TextStyleHandyMan">
         <item name="android:fontFamily">@font/handyman_bold</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="TextTitlePoppins">
@@ -37,5 +37,6 @@
     <style name="TextStyleOpenSans">
         <item name="android:fontFamily">@font/opensans_semibold</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>

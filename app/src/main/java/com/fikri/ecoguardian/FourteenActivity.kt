@@ -1,10 +1,9 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityFourteenBinding
-import com.fikri.ecoguardian.databinding.ActivityTwoBinding
 
 class FourteenActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFourteenBinding

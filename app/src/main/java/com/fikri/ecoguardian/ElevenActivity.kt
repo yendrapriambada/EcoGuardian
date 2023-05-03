@@ -1,8 +1,8 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityElevenBinding
 
 class ElevenActivity : AppCompatActivity() {

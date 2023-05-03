@@ -7,6 +7,7 @@
     tools:context=".TwentyEightActivity">
 
     <include
+        android:id="@+id/include2"
         layout="@layout/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -14,15 +15,29 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/asset_twenty_eight"/>
+        android:background="@drawable/asset_twenty_eight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_prev"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/asset_button_prev"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_home"
+        app:layout_constraintEnd_toStartOf="@id/btn_home"
+        app:layout_constraintTop_toTopOf="@+id/btn_home" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/asset_btn_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

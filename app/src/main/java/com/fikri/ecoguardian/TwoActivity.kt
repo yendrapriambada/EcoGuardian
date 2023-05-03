@@ -1,9 +1,9 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.fikri.ecoguardian.databinding.ActivityMainBinding
+import android.text.method.ScrollingMovementMethod
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityTwoBinding
 
 class TwoActivity : AppCompatActivity() {
@@ -12,6 +12,8 @@ class TwoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.tvKataPengantar.movementMethod = ScrollingMovementMethod()
 
         binding.apply {
             btnPrev.setOnClickListener {

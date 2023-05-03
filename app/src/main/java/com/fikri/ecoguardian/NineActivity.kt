@@ -2,10 +2,8 @@ package com.fikri.ecoguardian
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityNineBinding
-
 
 class NineActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNineBinding

@@ -1,8 +1,8 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityThreeBinding
 
 class ThreeActivity : AppCompatActivity() {
@@ -19,7 +19,13 @@ class ThreeActivity : AppCompatActivity() {
             }
 
             btnGames.setOnClickListener {
-                Intent(this@ThreeActivity, GameInstructionsActivity::class.java).also { startActivity(it) }
+                Intent(
+                    this@ThreeActivity,
+                    GameInstructionsActivity::class.java
+                ).also { startActivity(it) }
+            }
+            btnPrev.setOnClickListener {
+                Intent(this@ThreeActivity, TwoActivity::class.java).also { startActivity(it) }
             }
         }
     }

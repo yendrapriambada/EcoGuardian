@@ -1,9 +1,8 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.fikri.ecoguardian.databinding.ActivityElevenBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityThirteenBinding
 
 class ThirteenActivity : AppCompatActivity() {
@@ -16,7 +15,10 @@ class ThirteenActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@ThirteenActivity, ElevenActivity::class.java).also {
+                Intent(this@ThirteenActivity, TemplateVideoMateriActivity::class.java).also {
+                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.gempa_bumi))
+                    it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.gempa_bumi_instruksi))
+                    it.putExtra(SixActivity.EXTRA_FROM, 11)
                     startActivity(it)
                 }
             }

@@ -2,7 +2,6 @@ package com.fikri.ecoguardian
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityNineteenBinding
 
@@ -17,7 +16,10 @@ class NineteenActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@NineteenActivity, SeventeenActivity::class.java).also {
+                Intent(this@NineteenActivity, TemplateVideoMateriActivity::class.java).also {
+                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.tanah_longsor))
+                    it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.tanah_longsor_instruksi))
+                    it.putExtra(SixActivity.EXTRA_FROM, 17)
                     startActivity(it)
                 }
             }

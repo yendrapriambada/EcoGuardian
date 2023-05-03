@@ -1,8 +1,8 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityTwentyOneBinding
 
 class TwentyOneActivity : AppCompatActivity() {
@@ -23,7 +23,10 @@ class TwentyOneActivity : AppCompatActivity() {
             btnNext.setOnClickListener {
                 Intent(this@TwentyOneActivity, TemplateVideoMateriActivity::class.java).also {
                     it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.penebangan_liar))
-                    it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.penebangan_liar_instruksi))
+                    it.putExtra(
+                        SixActivity.EXTRA_DESC,
+                        getString(R.string.penebangan_liar_instruksi)
+                    )
                     it.putExtra(SixActivity.EXTRA_FROM, 21)
                     startActivity(it)
                 }
