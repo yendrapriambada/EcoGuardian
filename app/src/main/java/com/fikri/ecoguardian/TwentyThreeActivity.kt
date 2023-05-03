@@ -22,7 +22,10 @@ class TwentyThreeActivity : AppCompatActivity() {
             }
 
             btnNext.setOnClickListener {
-                Intent(this@TwentyThreeActivity, TwentyFiveActivity::class.java).also {
+                Intent(this@TwentyThreeActivity, TemplateVideoMateriActivity::class.java).also {
+                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.pencemaran_udara))
+                    it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.pencemaran_udara_instruksi))
+                    it.putExtra(SixActivity.EXTRA_FROM, 23)
                     startActivity(it)
                 }
             }

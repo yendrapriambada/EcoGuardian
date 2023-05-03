@@ -70,7 +70,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tv_desc"
             style="@style/TextRegularPoppins"
             android:layout_width="0dp"
             android:layout_height="150dp"
@@ -98,7 +98,7 @@
             android:background="@drawable/asset_gempa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
 
         <ImageButton
             android:id="@+id/btn_prev"

@@ -1,10 +1,9 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityTwentyFiveBinding
-import com.fikri.ecoguardian.databinding.ActivityTwentyThreeBinding
 
 class TwentyFiveActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTwentyFiveBinding
@@ -22,7 +21,10 @@ class TwentyFiveActivity : AppCompatActivity() {
             }
 
             btnNext.setOnClickListener {
-                Intent(this@TwentyFiveActivity, TwentySevenActivity::class.java).also {
+                Intent(this@TwentyFiveActivity, TemplateVideoMateriActivity::class.java).also {
+                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.pencemaran_air))
+                    it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.pencemaran_air_instruksi))
+                    it.putExtra(SixActivity.EXTRA_FROM, 25)
                     startActivity(it)
                 }
             }

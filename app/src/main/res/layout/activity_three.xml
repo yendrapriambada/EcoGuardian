@@ -8,7 +8,6 @@
     tools:context=".ThreeActivity">
 
     <ImageView
-        android:id="@+id/img_leaf1"
         android:layout_width="210dp"
         android:layout_height="200dp"
         android:layout_marginTop="-80dp"

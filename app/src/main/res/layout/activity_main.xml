@@ -19,7 +19,6 @@
         />
 
     <ImageView
-        android:id="@+id/img_cloud2"
         android:layout_width="155dp"
         android:layout_height="70dp"
         android:layout_marginTop="26dp"
@@ -59,7 +58,6 @@
         app:layout_constraintTop_toBottomOf="@id/img_cloud1" />
 
     <ImageView
-        android:id="@+id/img_cloud3"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:layout_marginEnd="-20dp"
@@ -68,7 +66,6 @@
         app:layout_constraintTop_toBottomOf="@id/img_title_text" />
 
     <ImageView
-        android:id="@+id/img_sea"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginStart="-40dp"
@@ -93,7 +90,6 @@
         app:layout_constraintTop_toBottomOf="@id/img_title_text" />
 
     <TextView
-        android:id="@+id/tv_slogan"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:text="@string/slogan"

@@ -22,7 +22,10 @@ class FourteenActivity : AppCompatActivity() {
             }
 
             btnNext.setOnClickListener {
-                Intent(this@FourteenActivity, SixteenActivity::class.java).also {
+                Intent(this@FourteenActivity, TemplateVideoMateriActivity::class.java).also {
+                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.title_tsunami))
+                    it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.title_tsunami_instruksi))
+                    it.putExtra(SixActivity.EXTRA_FROM, 14)
                     startActivity(it)
                 }
             }
