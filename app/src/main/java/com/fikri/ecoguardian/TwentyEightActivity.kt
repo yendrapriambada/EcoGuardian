@@ -21,11 +21,11 @@ class TwentyEightActivity : AppCompatActivity() {
                 }
             }
 
-            btnNext.setOnClickListener {
-                Intent(this@TwentyEightActivity, TwentyEightActivity::class.java).also {
-                    startActivity(it)
-                }
-            }
+//            btnNext.setOnClickListener {
+//                Intent(this@TwentyEightActivity, TwentyEightActivity::class.java).also {
+//                    startActivity(it)
+//                }
+//            }
         }
     }
 }

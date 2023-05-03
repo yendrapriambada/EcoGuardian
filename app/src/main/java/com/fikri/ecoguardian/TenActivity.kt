@@ -21,7 +21,7 @@ class TenActivity : AppCompatActivity() {
             }
 
             btnNext.setOnClickListener {
-                Intent(this@TenActivity, NineActivity::class.java).also {
+                Intent(this@TenActivity, ElevenActivity::class.java).also {
                     startActivity(it)
                 }
             }
