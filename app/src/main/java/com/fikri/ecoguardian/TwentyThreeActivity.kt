@@ -3,6 +3,7 @@ package com.fikri.ecoguardian
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import com.fikri.ecoguardian.databinding.ActivityTwentyThreeBinding
 import com.fikri.ecoguardian.databinding.ActivityTwoBinding
 

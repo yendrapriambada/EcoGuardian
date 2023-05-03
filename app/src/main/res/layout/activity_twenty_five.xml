@@ -48,59 +48,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-        <TextView
+        <ImageView
             android:id="@+id/textView5"
-            style="@style/TextRegularPoppins"
-            android:layout_width="0dp"
-            android:layout_height="410dp"
-            android:layout_marginStart="-100dp"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="120dp"
-            android:paddingTop="30dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="30dp"
-            android:text="@string/dampak_pencemaran_udara"
-            android:textStyle="normal"
+            android:background="@drawable/asset_tv_pencemaran_udara"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <ImageView
-            android:id="@+id/img_polusi"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="-49dp"
-            android:background="@drawable/asset_gambar_pencemaran"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
-            app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageButton
             android:id="@+id/btn_prev"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/asset_button_prev"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/img_polusi"
-            app:layout_constraintEnd_toStartOf="@id/btn_next"
+            android:background="@drawable/asset_button_prev"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@id/btn_next"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <ImageButton
             android:id="@+id/btn_next"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/asset_btn_next"
-            app:layout_constraintTop_toBottomOf="@id/img_polusi"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

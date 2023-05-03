@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#96D5ED"
-    tools:context=".NineActivity">
+    tools:context=".NineteenActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -48,22 +48,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-        <TextView
-            android:id="@+id/textView5"
-            style="@style/TextRegularPoppins"
-            android:layout_width="0dp"
-            android:layout_height="500dp"
-            android:layout_marginStart="-50dp"
+        <ImageView
+            android:id="@+id/img_penyebab"
+            android:layout_width="400dp"
+            android:layout_height="600dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="70dp"
-            android:paddingTop="50dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="50dp"
-            android:text="@string/penyebab_tanah_longsor"
-            android:textStyle="normal"
+            android:background="@drawable/asset_tv_penyebab_longsor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -71,27 +61,25 @@
             android:id="@+id/btn_prev"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/asset_button_prev"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/textView5"
-            app:layout_constraintEnd_toStartOf="@id/btn_next"
+            android:background="@drawable/asset_button_prev"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@id/btn_next"
+            app:layout_constraintTop_toBottomOf="@+id/img_penyebab" />
 
         <ImageButton
             android:id="@+id/btn_next"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/asset_btn_next"
-            app:layout_constraintTop_toBottomOf="@id/textView5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/img_penyebab" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
