@@ -17,6 +17,10 @@ class ThreeActivity : AppCompatActivity() {
             btnStudy.setOnClickListener {
                 Intent(this@ThreeActivity, FourActivity::class.java).also { startActivity(it) }
             }
+
+            btnGames.setOnClickListener {
+                Intent(this@ThreeActivity, GameInstructionsActivity::class.java).also { startActivity(it) }
+            }
         }
     }
 }

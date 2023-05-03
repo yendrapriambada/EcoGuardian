@@ -55,4 +55,6 @@
     <string name="dampak_gempa_bumi">Dampak Gempa Bumi terhadap Lingkungan</string>
     <string name="dampak_positif_gempa_bumi"><b>Dampak Positif Gempa Bumi Api bagi Manusia dan Lingkungan</b>\n<ol type="1">\n<li>Gempa bumi yang membuat mineral dan batu mulia naik ke permukaan sehingga lebih mudah untuk ditambang.</li>\n<li>Gempa bumi yang membuat daratan-daratan baru dan pelebaran pantai.</li>\n<li>Meningkatkan kewaspadaan manusia.</li>\n<li>Memicu ilmuwan-ilmuwan untuk menciptakan teknologi baru yang bisa meminimalisir kemungkinan terjadinya bencana alam.</li>\n</ol></string>
     <string name="dampak_negatif_gempa_bumi"><b>Dampak Negatif Gempa Bumi Manusia dan Lingkungan</b>\n<ol type="1">\n<li>Tanah longsor</li>\n<li>Runtuhan batuan</li>\n<li>Retakan tanah</li>\n<li>Tsunami</li>\n</ol></string>
+    <string name="permainan">Dalam permainan ini, kamu perlu menjawab pertanyaan dengan benar untuk menghindari kerusakan kota akibat Tsunami dengan cara menanam pohon mangrove! Setiap pertanyaan yang terjawab dengan benar mempunyai nilai sebagai berikut:\n\n1 soal PG = 1 Pohon\n1 soal Esai = 5 Pohon\n\nAyo selamatkan kota dengan menanam pohon mangrove di sekitar pantai!</string>
+    <string name="instruksi_permainan">INSTRUKSI\nPERMAINAN</string>
 </resources>
