@@ -52,6 +52,7 @@
             android:id="@+id/img_penyebab"
             android:layout_width="400dp"
             android:layout_height="600dp"
+            android:layout_marginStart="-30dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/asset_tv_penyebab_longsor"
             app:layout_constraintStart_toStartOf="parent"

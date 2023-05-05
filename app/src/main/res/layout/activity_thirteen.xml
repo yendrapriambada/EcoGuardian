@@ -45,10 +45,10 @@
             android:paddingEnd="45dp"
             android:paddingBottom="30dp"
             android:text="@string/gempa_bumi_desc"
-            android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
         <TextView
             android:id="@+id/textView2"
