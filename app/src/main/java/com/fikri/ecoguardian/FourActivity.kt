@@ -13,6 +13,17 @@ class FourActivity : AppCompatActivity() {
         binding = ActivityFourBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // create Shared Preference
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        // getPref
+        val dataPageFour = sharedPref.getString("pageFour", "default").toString()
+
+        if (dataPageFour != "default") {
+            binding.edtPageFour.setText(dataPageFour)
+        }
+
         binding.apply {
             btnPrev.setOnClickListener {
                 Intent(this@FourActivity, ThreeActivity::class.java).also {
@@ -24,6 +35,9 @@ class FourActivity : AppCompatActivity() {
                 Intent(this@FourActivity, FiveActivity::class.java).also {
                     startActivity(it)
                 }
+                // savePref
+                editor.putString("pageFour", binding.edtPageFour.text.toString().trim())
+                editor.apply()
             }
         }
     }
