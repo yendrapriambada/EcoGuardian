@@ -20,6 +20,7 @@ class NineteenActivity : AppCompatActivity() {
                     it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.tanah_longsor))
                     it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.tanah_longsor_instruksi))
                     it.putExtra(SixActivity.EXTRA_FROM, 17)
+                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.longsor)
                     startActivity(it)
                 }
             }

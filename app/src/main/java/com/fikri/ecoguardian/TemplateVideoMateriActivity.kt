@@ -1,11 +1,14 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.widget.MediaController
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_DESC
 import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_FROM
 import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_TITLE
+import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_VIDEO
 import com.fikri.ecoguardian.databinding.ActivityTemplateVideoMateriBinding
 
 class TemplateVideoMateriActivity : AppCompatActivity() {
@@ -23,13 +26,26 @@ class TemplateVideoMateriActivity : AppCompatActivity() {
         val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
         val editor = sharedPref.edit()
 
+        // video
+        val mediaController = MediaController(this)
+        mediaController.setAnchorView(binding.videoView)
+
         val title = intent.getStringExtra(EXTRA_TITLE)
         val desc = intent.getStringExtra(EXTRA_DESC)
+        val video = intent.getIntExtra(EXTRA_VIDEO, 0)
+        val offlineVideo = Uri.parse("android.resource://$packageName/${video}")
 
         binding.apply {
             tvTitle.text = title
             tvDesc.text = desc
+
+            // video
+            videoView.setMediaController(mediaController)
+            videoView.setVideoURI(offlineVideo)
+            videoView.requestFocus()
+            videoView.start()
         }
+
 
         when (intent.getIntExtra(EXTRA_FROM, 0)) {
             6 -> {

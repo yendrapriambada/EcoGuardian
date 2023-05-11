@@ -25,6 +25,7 @@ class FourteenActivity : AppCompatActivity() {
                     it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.title_tsunami))
                     it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.title_tsunami_instruksi))
                     it.putExtra(SixActivity.EXTRA_FROM, 14)
+                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.tsunami)
                     startActivity(it)
                 }
             }

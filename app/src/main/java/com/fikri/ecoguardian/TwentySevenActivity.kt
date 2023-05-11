@@ -22,6 +22,7 @@ class TwentySevenActivity : AppCompatActivity() {
                         getString(R.string.pencemaran_air_instruksi)
                     )
                     it.putExtra(SixActivity.EXTRA_FROM, 25)
+                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.sampah)
                     startActivity(it)
                 }
             }

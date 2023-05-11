@@ -24,6 +24,7 @@ class SixActivity : AppCompatActivity() {
                     it.putExtra(EXTRA_TITLE, getString(R.string.gunung_meletus))
                     it.putExtra(EXTRA_DESC, getString(R.string.gunung_meletus_instruksi))
                     it.putExtra(EXTRA_FROM, 6)
+                    it.putExtra(EXTRA_VIDEO, R.raw.gunung_meletus)
                     startActivity(it)
                 }
             }
@@ -34,5 +35,6 @@ class SixActivity : AppCompatActivity() {
         const val EXTRA_TITLE = "extra_title"
         const val EXTRA_DESC = "extra_desc"
         const val EXTRA_FROM = "extra_from"
+        const val EXTRA_VIDEO = "extra_video"
     }
 }

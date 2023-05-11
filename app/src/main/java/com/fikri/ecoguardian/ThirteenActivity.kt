@@ -19,6 +19,7 @@ class ThirteenActivity : AppCompatActivity() {
                     it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.gempa_bumi))
                     it.putExtra(SixActivity.EXTRA_DESC, getString(R.string.gempa_bumi_instruksi))
                     it.putExtra(SixActivity.EXTRA_FROM, 11)
+                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.gempa)
                     startActivity(it)
                 }
             }

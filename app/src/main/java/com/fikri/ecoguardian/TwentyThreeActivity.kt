@@ -22,6 +22,7 @@ class TwentyThreeActivity : AppCompatActivity() {
                         getString(R.string.penebangan_liar_instruksi)
                     )
                     it.putExtra(SixActivity.EXTRA_FROM, 21)
+                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.tidak_ada_hutan)
                     startActivity(it)
                 }
             }
@@ -34,6 +35,7 @@ class TwentyThreeActivity : AppCompatActivity() {
                         getString(R.string.pencemaran_udara_instruksi)
                     )
                     it.putExtra(SixActivity.EXTRA_FROM, 23)
+                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.polusi_udara)
                     startActivity(it)
                 }
             }
