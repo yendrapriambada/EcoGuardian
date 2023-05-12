@@ -1,17 +1,21 @@
 package com.fikri.ecoguardian
 
 import android.animation.AnimatorSet
+import android.animation.ArgbEvaluator
 import android.animation.ObjectAnimator
+import android.animation.PropertyValuesHolder
 import android.app.ProgressDialog
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityGameBinding
 import java.util.*
-
 
 class GameActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGameBinding
@@ -117,13 +121,34 @@ class GameActivity : AppCompatActivity() {
         indexSoal++
 
         if (indexSoal >= soalEssay.size) {
-//            val totalSoal = soal.size + soalEssay.size
-//            score /= totalSoal
-            val intent = Intent(this@GameActivity, ResultActivity::class.java)
-            intent.putExtra("hasilScore", score)
-            startActivity(intent)
-            finish()
-            hideLoading()
+            val soalPertanyaan =
+                ObjectAnimator.ofPropertyValuesHolder(
+                    binding.tsunami, PropertyValuesHolder.ofFloat(View.TRANSLATION_X, 0f, -800f),
+                    PropertyValuesHolder.ofFloat(View.TRANSLATION_Y, 0f, 500f)
+                ).setDuration(2000)
+
+            val colorFade: ObjectAnimator = ObjectAnimator.ofObject(
+                binding.imageView,
+                "backgroundColor",
+                ArgbEvaluator(),
+                Color.argb(255, 255, 220, 149),
+                Color.argb(255, 20, 161, 216)
+            ).setDuration(2000)
+
+            Handler(Looper.getMainLooper()).postDelayed({
+                hideLoading()
+
+                soalPertanyaan.start()
+                colorFade.start()
+            }, 1000)
+
+            Handler(Looper.getMainLooper()).postDelayed({
+                // Kode yang ingin Anda jalankan setelah menunggu selama 4 detik.
+                val intent = Intent(this@GameActivity, ResultActivity::class.java)
+                intent.putExtra("hasilScore", score)
+                startActivity(intent)
+                finish()
+            }, 4000)
         } else {
             binding.edtJawaban.text.clear()
             showDataLayoutEssay()

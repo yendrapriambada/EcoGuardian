@@ -7,16 +7,17 @@
     android:background="@color/blue_sky"
     tools:context=".GameActivity">
 
-    <ImageView
+    <View
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="365dp"
-        android:background="@drawable/shape"
+        android:background="#FADC95"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/tsunami"
         android:layout_width="500dp"
         android:layout_height="500dp"
         android:layout_marginStart="-150dp"
