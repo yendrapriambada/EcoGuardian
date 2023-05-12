@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_sky"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="-150dp"
+        android:layout_marginTop="-300dp"
+        android:background="@drawable/asset_gelombang_tsunami"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/asset_rumah_warga"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="-10dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <ImageView
+        android:id="@+id/mangrove2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove6"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="136dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="165dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove8"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="204dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove9"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="228dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove10"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="268dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove11"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove12"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="148dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove14"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="172dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mangrove15"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/asset_mangrove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#7D9E47"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/TextTitlePoppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Soal Pertanyaan"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/soal_pertanyaan"
+                style="@style/TextRegularPoppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:alpha="0"
+                android:justificationMode="inter_word"
+                android:text="Bagian ini diisi oleh soal pertanyaan. Silahkan isi melalui GSheet!"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:alpha="1" />
+
+            <Button
+                android:id="@+id/btn_opsi_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0"
+                android:text="Pilihan jawaban opsi A. Ini adalah template testing jawaban opsi A."
+                android:textAllCaps="false"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/soal_pertanyaan"
+                app:layout_constraintStart_toStartOf="@+id/soal_pertanyaan"
+                app:layout_constraintTop_toBottomOf="@+id/soal_pertanyaan"
+                tools:alpha="1" />
+
+            <Button
+                android:id="@+id/btn_opsi_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0"
+                android:text="opsiB"
+                android:textAllCaps="false"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_opsi_a"
+                app:layout_constraintStart_toStartOf="@+id/btn_opsi_a"
+                app:layout_constraintTop_toBottomOf="@+id/btn_opsi_a"
+                tools:alpha="1" />
+
+            <Button
+                android:id="@+id/btn_opsi_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0"
+                android:text="opsiC"
+                android:textAllCaps="false"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_opsi_b"
+                app:layout_constraintStart_toStartOf="@+id/btn_opsi_b"
+                app:layout_constraintTop_toBottomOf="@+id/btn_opsi_b"
+                tools:alpha="1" />
+
+            <Button
+                android:id="@+id/btn_opsi_d"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:alpha="0"
+                android:text="opsiD"
+                android:textAllCaps="false"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_opsi_c"
+                app:layout_constraintStart_toStartOf="@+id/btn_opsi_c"
+                app:layout_constraintTop_toBottomOf="@+id/btn_opsi_c"
+                tools:alpha="1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-60dp"
+        android:layout_marginBottom="-12dp"
+        android:src="@drawable/asset_grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="-84dp"
+        android:layout_marginBottom="-12dp"
+        android:src="@drawable/asset_grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

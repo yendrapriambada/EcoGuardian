@@ -62,4 +62,115 @@
     <string name="dampak_negatif_gempa_bumi"><b>Dampak Negatif Gempa Bumi Manusia dan Lingkungan</b>\n<ol type="1">\n<li>Tanah longsor</li>\n<li>Runtuhan batuan</li>\n<li>Retakan tanah</li>\n<li>Tsunami</li>\n</ol></string>
     <string name="permainan">Dalam permainan ini, kamu perlu menjawab pertanyaan dengan benar untuk menghindari kerusakan kota akibat Tsunami dengan cara menanam pohon mangrove! Setiap pertanyaan yang terjawab dengan benar mempunyai nilai sebagai berikut:\n\n1 soal PG = 1 Pohon\n1 soal Esai = 5 Pohon\n\nAyo selamatkan kota dengan menanam pohon mangrove di sekitar pantai!</string>
     <string name="instruksi_permainan">INSTRUKSI\nPERMAINAN</string>
+    <string name="hasil_permainan">Hasil Permainan</string>
+    <string name="persentase_kerusakan_bangunan_sebesar">Persentase kerusakan bangunan sebesar</string>
+
+    <string-array name="questions">
+        <item name="question1">Salah satu pencemaran lingkungan adalah pencemaran air. Apa yang menyebabkan pencemaran air?</item>
+        <item name="question2">Berikut ini yang merupakan ulah manusia yang dapat menyebabkan pencemaran air adalah...</item>
+        <item name="question3">Berikut ini merupakan cara untuk mengurangi pencemaran udara, kecuali...</item>
+        <item name="question4">Limbah pertanian yang dapat menjadi polutan adalah...</item>
+        <item name="question5">Salah satu cara menanggulangi pencemaran yang disebabkan oleh limbah pabrik yaitu…</item>
+        <item name="question6">Peristiwa masuknya zat, energi/komponen lain ke dalam lingkungan udara disebut...</item>
+        <item name="question7">Kandungan CO yang berlebih di udara dapat menimbulkan...</item>
+        <item name="question8">Berikut yang merupakan upaya pelestarian lingkungan adalah...</item>
+        <item name="question9">Yang bukan merupakan dampak negatif akibat kita membuang limbah pada sembarang adalah…</item>
+        <item name="question10">Usaha-usaha manusia untuk melestarikan lingkungan agar serasi dan seimbang adalah...</item>
+        <item name="question11">Cara alami yang dapat dilakukan untuk mempertahankan atau meningkatkan kualitas tanah adalah...</item>
+        <item name="question12">Faktor-faktor penyebab perubahan lingkungan di daratan adalah ...</item>
+        <item name="question13">Di bawah ini yang bukan termasuk akibat dari curah hujan yang tinggi adalah ...</item>
+        <item name="question14">Apa yang dimaksud dengan "efek rumah kaca"?</item>
+        <item name="question15">Apa yang dapat kita lakukan untuk membantu mengurangi perubahan lingkungan yang disebabkan oleh alam?</item>
+    </string-array>
+
+    <string-array name="optionsA">
+        <item name="option1A">Masuknya polutan zat cair dan padat ke dalam ekosistem air.</item>
+        <item name="option2A">Menanam tumbuhan air dan membuang sabun di sungai.</item>
+        <item name="option3A">Menggunakan bahan bakar alternatif</item>
+        <item name="option4A">Logam berat dan hujan asam</item>
+        <item name="option5A">Mengurangi dan menutup industri bahan kimia</item>
+        <item name="option6A">Pencemaran air</item>
+        <item name="option7A">Pemanasan global</item>
+        <item name="option8A">Denitrifikasi</item>
+        <item name="option9A">Kesuburan tanah meningkat</item>
+        <item name="option10A">Pemakaian sumber daya alam secara berlebihan</item>
+        <item name="option11A">Reboisasi dan rotasi tanaman</item>
+        <item name="option12A">Angin</item>
+        <item name="option13A">Banjir</item>
+        <item name="option14A">Gas yang terperangkap di atmosfer dan menyebabkan peningkatan suhu</item>
+        <item name="option15A">Mengurangi penggunaan bahan bakar fosil</item>
+    </string-array>
+
+    <string-array name="optionsB">
+        <item name="option1B">Masuknya polutan zat cair dan padat ke dalam tanah.</item>
+        <item name="option2B">Melakukan terasering, menjaga ekosistem dan biota sungai.</item>
+        <item name="option3B">Menambah lahan hijau di halaman rumah</item>
+        <item name="option4B">Pupuk buatan dan pestisida buatan</item>
+        <item name="option5B">Membatasi penggunaan bahan kimia</item>
+        <item name="option6B">Pencemaran suara</item>
+        <item name="option7B">Sesak napas</item>
+        <item name="option8B">Urbanisasi</item>
+        <item name="option9B">Dapat menurunkan kualitas tanah</item>
+        <item name="option10B">Perburuan satwa tanpa memperdulikan jumlah populasi</item>
+        <item name="option11B">Erosi dan pemupukan</item>
+        <item name="option12B">Hujan</item>
+        <item name="option13B">Kekeringan</item>
+        <item name="option14B">Efek suhu rendah pada lingkungan</item>
+        <item name="option15B">Menjaga kebersihan lingkungan</item>
+    </string-array>
+
+    <string-array name="optionsC">
+        <item name="option1C">Pencemaran oleh gas-gas kendaraan bermotor.</item>
+        <item name="option2C">Membuang sampah cair, padat ke sungai, menggunakan pestisida secara berlebihan.</item>
+        <item name="option3C">Menggunakan bahan bakar fosil</item>
+        <item name="option4C">Sampah organik dan detergen</item>
+        <item name="option5C">Membuang limbah pabrik sedikit demi sedikit</item>
+        <item name="option6C">Pencemaran tanah</item>
+        <item name="option7C">Hujan asam</item>
+        <item name="option8C">Sanitasi</item>
+        <item name="option9C">Mengurangi keindahan lingkungan</item>
+        <item name="option10C">Penebangan hutan secara ekonomis</item>
+        <item name="option11C">Sengkedan dan erosi</item>
+        <item name="option12C">Gelombang air laut dan cahaya matahari</item>
+        <item name="option13C">Erosi</item>
+        <item name="option14C">Gas yang menghambat peningkatan suhu global</item>
+        <item name="option15C">Membangun tanggul dan bendungan</item>
+    </string-array>
+
+    <string-array name="optionsD">
+        <item name="option1D">Rusaknya ekosistem air karena terlalu banyak ikan yang hidup.</item>
+        <item name="option2D">Tidak membuang sampah di sungai, menjaga kebersihan sungai.</item>
+        <item name="option3D">Memusnahkan sampah dengan cara didaur ulang</item>
+        <item name="option4D">Sisa makanan dan plastik</item>
+        <item name="option5D">Mengolah limbah pabrik sebelum dibuang</item>
+        <item name="option6D">Pencemaran udara</item>
+        <item name="option7D">Berlubangnya ozon</item>
+        <item name="option8D">Reboisasi</item>
+        <item name="option9D">Berkembangnya berbagai jenis penyakit</item>
+        <item name="option10D">Pemanfaatan sumber daya alam secara bijaksana</item>
+        <item name="option11D">Pemupukan dan rotasi tanaman</item>
+        <item name="option12D">Jawaban a, b, dan c benar</item>
+        <item name="option13D">Abrasi</item>
+        <item name="option14D">Efek positif dari peningkatan suhu global</item>
+        <item name="option15D">Melakukan penanaman pohon dan menjaga kelestarian hutan</item>
+    </string-array>
+
+    <string-array name="jawaban">
+        <item>a</item>
+        <item>c</item>
+        <item>c</item>
+        <item>b</item>
+        <item>d</item>
+        <item>d</item>
+        <item>a</item>
+        <item>d</item>
+        <item>a</item>
+        <item>d</item>
+        <item>a</item>
+        <item>d</item>
+        <item>b</item>
+        <item>a</item>
+        <item>d</item>
+    </string-array>
+
 </resources>
