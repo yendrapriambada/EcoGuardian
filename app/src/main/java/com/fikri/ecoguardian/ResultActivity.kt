@@ -14,9 +14,36 @@ class ResultActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        val scoreQuiz = intent.getIntExtra("hasilScore", 0)
+        var scoreQuiz = intent.getFloatExtra("hasilScore", 0f).toInt()
+
+        if (scoreQuiz == 99) scoreQuiz = 100
+
+        var persentase = 100
+        when (scoreQuiz) {
+            in 1..10 -> {
+                persentase = 90
+            }
+            in 11..20 -> {
+                persentase = 80
+            }
+            in 21..40 -> {
+                persentase = 80
+            }
+            in 41..60 -> {
+                persentase = 60
+            }
+            in 61..80 -> {
+                persentase = 40
+            }
+            in 81..100 -> {
+                persentase = 20
+            }
+        }
+
+        val persentaseKerusakan = "$persentase%"
 
         binding.score.text = scoreQuiz.toString().trim()
+        binding.persentase.text = persentaseKerusakan
 
         binding.apply {
             btnPrev.setOnClickListener {

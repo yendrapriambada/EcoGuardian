@@ -346,6 +346,7 @@
                 android:hint="@string/jawab_disini"
                 android:inputType="textLongMessage|textMultiLine"
                 android:padding="20dp"
+                android:enabled="false"
                 app:layout_constraintEnd_toEndOf="@+id/soal_pertanyaan"
                 app:layout_constraintStart_toStartOf="@+id/soal_pertanyaan"
                 app:layout_constraintTop_toBottomOf="@+id/soal_pertanyaan"
@@ -380,7 +381,7 @@
                 android:id="@+id/btn_opsi_b"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:alpha="0"
                 android:text="opsiB"
                 android:textAllCaps="false"
@@ -394,7 +395,7 @@
                 android:id="@+id/btn_opsi_c"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:alpha="0"
                 android:text="opsiC"
                 android:textAllCaps="false"
@@ -408,8 +409,7 @@
                 android:id="@+id/btn_opsi_d"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
                 android:alpha="0"
                 android:text="opsiD"
                 android:textAllCaps="false"
@@ -418,26 +418,28 @@
                 app:layout_constraintStart_toStartOf="@+id/btn_opsi_c"
                 app:layout_constraintTop_toBottomOf="@+id/btn_opsi_c"
                 tools:alpha="1" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="-60dp"
+                android:layout_marginBottom="-12dp"
+                android:src="@drawable/asset_grass"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="-84dp"
+                android:layout_marginBottom="-12dp"
+                android:src="@drawable/asset_grass"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="-60dp"
-        android:layout_marginBottom="-12dp"
-        android:src="@drawable/asset_grass"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="-84dp"
-        android:layout_marginBottom="-12dp"
-        android:src="@drawable/asset_grass"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

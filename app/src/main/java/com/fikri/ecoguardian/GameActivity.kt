@@ -25,7 +25,7 @@ class GameActivity : AppCompatActivity() {
     private var jawabanEssay: ArrayList<String> = ArrayList()
     private var jawabanUser: ArrayList<String> = ArrayList()
     private var jawabanUserEssay: ArrayList<String> = ArrayList()
-    private var score = 0
+    private var score: Float = 0f
     private var indexSoal = 0
     private var progressDialog: ProgressDialog? = null
 
@@ -89,7 +89,7 @@ class GameActivity : AppCompatActivity() {
 
         // check jawaban
         if (jawabanUserEssay[indexSoal] == jawabanEssay[indexSoal].lowercase(Locale.getDefault())) {
-            score += 100
+            score += 8.3f
 
             binding.apply {
                 when (indexSoal) {
@@ -117,14 +117,15 @@ class GameActivity : AppCompatActivity() {
         indexSoal++
 
         if (indexSoal >= soalEssay.size) {
-            val totalSoal = soal.size + soalEssay.size
-            score /= totalSoal
+//            val totalSoal = soal.size + soalEssay.size
+//            score /= totalSoal
             val intent = Intent(this@GameActivity, ResultActivity::class.java)
             intent.putExtra("hasilScore", score)
             startActivity(intent)
             finish()
             hideLoading()
         } else {
+            binding.edtJawaban.text.clear()
             showDataLayoutEssay()
             hideLoading()
         }
@@ -140,7 +141,7 @@ class GameActivity : AppCompatActivity() {
 
         // check jawaban
         if (jawabanUser[indexSoal] == jawaban[indexSoal].lowercase(Locale.getDefault())) {
-            score += 100
+            score += 5f
 
             binding.apply {
                 when (indexSoal) {
@@ -178,6 +179,7 @@ class GameActivity : AppCompatActivity() {
 
         if (indexSoal >= soal.size) {
             indexSoal = 0   // counting mulai dari awal untuk soal essay
+            binding.edtJawaban.isEnabled = true
             showDataLayoutEssay()
             hideLoading()
         } else {
