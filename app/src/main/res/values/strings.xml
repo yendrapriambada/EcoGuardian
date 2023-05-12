@@ -64,6 +64,8 @@
     <string name="instruksi_permainan">INSTRUKSI\nPERMAINAN</string>
     <string name="hasil_permainan">Hasil Permainan</string>
     <string name="persentase_kerusakan_bangunan_sebesar">Persentase kerusakan bangunan sebesar</string>
+    <string name="jawab_disini">Jawab disini . . .</string>
+    <string name="submit">Submit</string>
 
     <string-array name="questions">
         <item name="question1">Salah satu pencemaran lingkungan adalah pencemaran air. Apa yang menyebabkan pencemaran air?</item>
@@ -172,5 +174,15 @@
         <item>a</item>
         <item>d</item>
     </string-array>
+    <string-array name="soal_essay">
+        <item>Peristiwa masuknya zat atau komponen lainnya ke dalam lingkungan perairan sehingga mutu air terganggu disebut...</item>
+        <item>Pengikisan pantai yang disebabkan oleh gelombang air laut disebut ...</item>
+        <item>Hujan, angin, dan gempa bumi merupakan contoh perubahan lingkungan yang disebabkan oleh...</item>
+    </string-array>
 
+    <string-array name="jawaban_essay">
+        <item>pencemaran air</item>
+        <item>abrasi</item>
+        <item>alam</item>
+    </string-array>
 </resources>

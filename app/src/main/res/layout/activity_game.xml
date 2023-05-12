@@ -39,140 +39,252 @@
         android:layout_height="65dp"
         android:layout_marginStart="-10dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintVertical_bias="0.71"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove2"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="64dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove3"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove4"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="92dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove5"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="104dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="172dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="120dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove7"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="165dp"
+        android:layout_marginTop="148dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove8"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="176dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove9"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="212dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove10"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="268dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="244dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove11"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="288dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove12"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mangrove13"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove14"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="132dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/mangrove15"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="148dp"
         android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mangrove16"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="176dp"
+        android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mangrove17"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="212dp"
+        android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mangrove18"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mangrove19"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="276dp"
+        android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mangrove20"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mangrove21"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="164dp"
+        android:src="@drawable/asset_mangrove"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <View
         android:id="@+id/view2"
@@ -183,11 +295,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -226,6 +336,31 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3"
                 tools:alpha="1" />
+
+            <EditText
+                android:id="@+id/edt_jawaban"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/asset_bg_note"
+                android:hint="@string/jawab_disini"
+                android:inputType="textLongMessage|textMultiLine"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/soal_pertanyaan"
+                app:layout_constraintStart_toStartOf="@+id/soal_pertanyaan"
+                app:layout_constraintTop_toBottomOf="@+id/soal_pertanyaan"
+                android:alpha="0"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/submit"
+                app:layout_constraintEnd_toEndOf="@+id/edt_jawaban"
+                app:layout_constraintStart_toStartOf="@+id/edt_jawaban"
+                app:layout_constraintTop_toBottomOf="@+id/edt_jawaban"
+                android:alpha="0"/>
 
             <Button
                 android:id="@+id/btn_opsi_a"
@@ -304,4 +439,5 @@
         android:src="@drawable/asset_grass"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
