@@ -13,6 +13,8 @@ class TwentyFiveActivity : AppCompatActivity() {
         binding = ActivityTwentyFiveBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupMusic()
+
         binding.apply {
             btnPrev.setOnClickListener {
                 Intent(this@TwentyFiveActivity, TemplateVideoMateriActivity::class.java).also {
@@ -40,5 +42,12 @@ class TwentyFiveActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun setupMusic(){
+        val action = "PLAY"
+        val myService = Intent(this@TwentyFiveActivity, MusicService::class.java)
+        myService.action = action
+        startService(myService)
     }
 }

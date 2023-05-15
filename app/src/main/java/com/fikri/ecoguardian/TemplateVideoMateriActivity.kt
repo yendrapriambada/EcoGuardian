@@ -22,6 +22,8 @@ class TemplateVideoMateriActivity : AppCompatActivity() {
         binding = ActivityTemplateVideoMateriBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupMusic()
+
         // create Shared Preference
         val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
         val editor = sharedPref.edit()
@@ -135,5 +137,12 @@ class TemplateVideoMateriActivity : AppCompatActivity() {
                 editor.apply()
             }
         }
+    }
+
+    private fun setupMusic(){
+        val action = "STOP"
+        val myService = Intent(this@TemplateVideoMateriActivity, MusicService::class.java)
+        myService.action = action
+        startService(myService)
     }
 }

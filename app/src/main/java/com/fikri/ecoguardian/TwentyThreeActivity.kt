@@ -13,6 +13,8 @@ class TwentyThreeActivity : AppCompatActivity() {
         binding = ActivityTwentyThreeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupMusic()
+
         binding.apply {
             btnPrev.setOnClickListener {
                 Intent(this@TwentyThreeActivity, TemplateVideoMateriActivity::class.java).also {
@@ -40,5 +42,11 @@ class TwentyThreeActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+    private fun setupMusic(){
+        val action = "PLAY"
+        val myService = Intent(this@TwentyThreeActivity, MusicService::class.java)
+        myService.action = action
+        startService(myService)
     }
 }
