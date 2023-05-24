@@ -8,6 +8,7 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
@@ -32,6 +33,8 @@ class GameActivity : AppCompatActivity() {
     private var score: Float = 0f
     private var indexSoal = 0
     private var progressDialog: ProgressDialog? = null
+    private lateinit var countDownTimer: CountDownTimer
+    private var timeLeftInMillis: Long = 30000
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,6 +84,45 @@ class GameActivity : AppCompatActivity() {
                 essayAlgorithm()
             }
         }
+    }
+
+    private fun startTimer(state: Int) {
+        countDownTimer = object : CountDownTimer(timeLeftInMillis, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                Log.d("timer:", millisUntilFinished.toString())
+                timeLeftInMillis = millisUntilFinished
+                updateCountdownText()
+            }
+
+            override fun onFinish() {
+                // Timer finished
+                // Add your desired logic here
+                if (state != 2){
+                    jawabanUser.add("e")
+                    quizAlgorithm()
+                }
+                else{
+                    jawabanUserEssay.add("waktu habis!")
+                    essayAlgorithm()
+                }
+            }
+        }
+
+        countDownTimer.start()
+    }
+
+    private fun resetTimer() {
+        timeLeftInMillis = 30000 // 1 minute (you can change the duration as per your requirement)
+        updateCountdownText()
+        countDownTimer.cancel()
+    }
+
+    private fun updateCountdownText() {
+        val minutes = (timeLeftInMillis / 1000) / 60
+        val seconds = (timeLeftInMillis / 1000) % 60
+
+        val formattedTime = String.format("%02d:%02d", minutes, seconds)
+        binding.tvTimer.text = formattedTime
     }
 
     private fun essayAlgorithm() {
@@ -236,9 +278,12 @@ class GameActivity : AppCompatActivity() {
                 start()
             }
         }
+        timeLeftInMillis = 120000
+        startTimer(2)
     }
 
     private fun hideDataLayoutEssay() {
+        resetTimer()
         binding.apply {
             soalPertanyaan.alpha = 0f
             edtJawaban.alpha = 0f
@@ -282,9 +327,12 @@ class GameActivity : AppCompatActivity() {
                 start()
             }
         }
+
+        startTimer(1)
     }
 
     private fun hideDataLayout() {
+        resetTimer()
         binding.apply {
             soalPertanyaan.alpha = 0f
 
