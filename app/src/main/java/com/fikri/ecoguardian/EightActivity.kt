@@ -13,6 +13,8 @@ class EightActivity : AppCompatActivity() {
         binding = ActivityEightBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupMusic()
+
         binding.apply {
             btnPrev.setOnClickListener {
                 Intent(this@EightActivity, TemplateVideoMateriActivity::class.java).also {
@@ -33,5 +35,12 @@ class EightActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun setupMusic(){
+        val action = "PLAY"
+        val myService = Intent(this@EightActivity, MusicService::class.java)
+        myService.action = action
+        startService(myService)
     }
 }
