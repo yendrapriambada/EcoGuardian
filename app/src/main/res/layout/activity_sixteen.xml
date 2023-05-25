@@ -27,87 +27,64 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <ImageView
             android:id="@+id/textView4"
-            style="@style/TextRegularPoppins"
             android:layout_width="0dp"
-            android:layout_height="320dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="-50dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="30dp"
-            android:paddingTop="30dp"
-            android:paddingEnd="70dp"
-            android:paddingBottom="30dp"
-            android:text="@string/menurut_kbbi_tsunami_adalah_gelombang_air_laut_dahsyat_gelombang_pasang_yang_terjadi_karena_gempa_bumi_atau_letusan_gunung_api_di_dasar_laut_secara_etimologi_tsunami_berasal_dari_bahasa_jepang_tsu_berarti_pelabuhan_dan_nami_yang_berarti_gelombang_tsunami_ialah_gelombang_raksasa_yang_terjadi_karena_disebabkan_pergerakan_di_dasar_laut"
+            android:layout_height="250dp"
+            android:layout_marginStart="32dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/asset_16_1"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-        <TextView
+        <ImageView
             android:id="@+id/textView5"
-            style="@style/TextRegularPoppins"
             android:layout_width="0dp"
-            android:layout_height="320dp"
-            android:layout_marginStart="-100dp"
+            android:layout_height="200dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="120dp"
-            android:paddingTop="30dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="30dp"
-            android:text="@string/penyebab_tsunami"
-            android:textStyle="normal"
+            android:layout_marginEnd="56dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/asset_16_2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <TextView
+        <ImageView
             android:id="@+id/textView6"
-            style="@style/TextRegularPoppins"
-            android:textStyle="normal"
             android:layout_width="0dp"
-            android:layout_height="360dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="-100dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="30dp"
-            android:paddingTop="30dp"
-            android:paddingEnd="120dp"
-            android:paddingBottom="30dp"
-            android:text="@string/ciri_ciri_terjadinya_tsunami"
+            android:layout_height="240dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/asset_16_3"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <ImageButton
             android:id="@+id/btn_prev"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/asset_button_prev"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/textView6"
-            app:layout_constraintEnd_toStartOf="@id/btn_next"
+            android:background="@drawable/asset_button_prev"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@id/btn_next"
+            app:layout_constraintTop_toBottomOf="@id/textView6" />
 
         <ImageButton
             android:id="@+id/btn_next"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/asset_btn_next"
-            app:layout_constraintTop_toBottomOf="@id/textView6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintTop_toBottomOf="@id/textView6" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
