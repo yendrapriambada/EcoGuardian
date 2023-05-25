@@ -35,20 +35,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_kata_pengantar"
-        style="@style/TextStyleHandyMan"
+    <ImageView
+        android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/asset_bg_introduction"
-        android:justificationMode="inter_word"
-        android:padding="24dp"
-        android:text="@string/kata_pengantar"
-        app:layout_constraintBottom_toTopOf="@id/btn_prev"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kata_pengantar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img_intro_text" />
+        app:layout_constraintTop_toBottomOf="@id/img_intro_text"
+        app:layout_constraintBottom_toTopOf="@id/btn_prev"/>
+
 
     <ImageView
         android:layout_width="200dp"
