@@ -21,7 +21,7 @@ class ThreeActivity : AppCompatActivity() {
             btnGames.setOnClickListener {
                 Intent(
                     this@ThreeActivity,
-                    GameInstructionsActivity::class.java
+                    Game2Activity::class.java
                 ).also { startActivity(it) }
             }
             btnPrev.setOnClickListener {

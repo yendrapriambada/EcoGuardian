@@ -7,7 +7,6 @@ import com.fikri.ecoguardian.databinding.ActivityFourBinding
 
 class FourActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFourBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFourBinding.inflate(layoutInflater)
