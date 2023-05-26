@@ -59,7 +59,7 @@
             android:layout_width="0dp"
             android:layout_height="135dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="-16dp"
             android:scaleType="fitEnd"
             android:src="@drawable/page13_3"
             app:layout_constraintEnd_toEndOf="parent"

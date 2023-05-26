@@ -14,6 +14,7 @@
     </string>
     <string name="dampak_tsunami_terhadap_lingkungan">Dampak Tsunami Terhadap Lingkungan</string>
     <string name="tanah_longsor">Tanah Longsor</string>
+    <string name="tanah_longsor_deskripsi">Tanah longsor atau sering disebut gerakan tanah merupakan suatu peristiwa geologi yang terjadi akibat pergerakan masa batuan atau tanah.</string>
     <string name="tanah_longsor_instruksi">Ayo tuliskan bagaimana tanah longor dapat terjadi dan apa saja dampak yang ditimbulkan dari tanah longsor tersebut!</string>
     <string name="dampak_tanah_longsor_terhadap_lingkungan">Dampak Tanah Longsor terhadap Lingkungan</string>
     <string name="penebangan_liar">Penebangan Liar</string>
@@ -53,6 +54,8 @@
     <string name="persentase_kerusakan_bangunan_sebesar">Persentase kerusakan bangunan sebesar</string>
     <string name="jawab_disini">Jawab disini . . .</string>
     <string name="submit">Submit</string>
+    <string name="tanggapan_siswa_bencana_alam">Sebelumnya kita sudah melihat bencana alam yang terjadi. Coba tuliskan perasaan kalian ketika melihat bencana beserta dampak yang ditimbulkan tersebut!</string>
+    <string name="tanggapan_siswa_bencana_akibat_manusia">Kita sudah melihat bencana alam yang terjadi yang disebabkan oleh manusia. Bagaimana perasaan kalian ketika melihat bencana yang ditimbulkan oleh manusia tersebut?</string>
 
     <string-array name="questions">
         <item name="question1">Salah satu pencemaran lingkungan adalah pencemaran air. Apa yang menyebabkan pencemaran air?</item>

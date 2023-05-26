@@ -18,7 +18,7 @@ class EightActivity : AppCompatActivity() {
         binding.apply {
             btnPrev.setOnClickListener {
                 Intent(this@EightActivity, TemplateVideoMateriActivity::class.java).also {
-                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.gunung_meletus)
+                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.gunung)
                     it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.gunung_meletus))
                     it.putExtra(
                         SixActivity.EXTRA_DESC,

@@ -3,6 +3,8 @@ package com.fikri.ecoguardian
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_FROM
+import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_TEXT
 import com.fikri.ecoguardian.databinding.ActivityTwentyBinding
 
 class TwentyActivity : AppCompatActivity() {
@@ -20,7 +22,9 @@ class TwentyActivity : AppCompatActivity() {
             }
 
             btnNext.setOnClickListener {
-                Intent(this@TwentyActivity, TwentyOneActivity::class.java).also {
+                Intent(this@TwentyActivity, TemplateStudentResponsesActivity::class.java).also {
+                    it.putExtra(EXTRA_TEXT, getString(R.string.tanggapan_siswa_bencana_alam))
+                    it.putExtra(EXTRA_FROM, 20)
                     startActivity(it)
                 }
             }

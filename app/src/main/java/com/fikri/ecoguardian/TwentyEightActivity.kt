@@ -15,13 +15,15 @@ class TwentyEightActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@TwentyEightActivity, TwentySevenActivity::class.java).also {
+                Intent(this@TwentyEightActivity, TemplateStudentResponsesActivity::class.java).also {
+                    it.putExtra(SixActivity.EXTRA_TEXT, getString(R.string.tanggapan_siswa_bencana_akibat_manusia))
+                    it.putExtra(SixActivity.EXTRA_FROM, 27)
                     startActivity(it)
                 }
             }
 
-            btnHome.setOnClickListener {
-                Intent(this@TwentyEightActivity, ThreeActivity::class.java).also {
+            btnNext.setOnClickListener {
+                Intent(this@TwentyEightActivity, ReferencesActivity::class.java).also {
                     startActivity(it)
                 }
             }
