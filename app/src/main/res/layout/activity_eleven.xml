@@ -30,43 +30,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView1"
-            style="@style/TextRegularPoppins"
+        <ImageView
+            android:id="@+id/textView"
             android:layout_width="0dp"
-            android:layout_height="550dp"
+            android:layout_height="340dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="-40dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="30dp"
-            android:paddingTop="40dp"
-            android:paddingEnd="55dp"
-            android:paddingBottom="30dp"
-            android:text="@string/dampak_negatif_letusan_gunung_1"
-            android:textStyle="normal"
+            android:scaleType="fitEnd"
+            android:src="@drawable/page11_1"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-        <TextView
+        <ImageView
             android:id="@+id/textView2"
-            style="@style/TextRegularPoppins"
             android:layout_width="0dp"
-            android:layout_height="310dp"
-            android:layout_marginStart="-70dp"
+            android:layout_height="230dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="88dp"
-            android:paddingTop="35dp"
-            android:paddingEnd="35dp"
-            android:paddingBottom="30dp"
-            android:text="@string/dampak_negatif_letusan_gunung_2"
-            android:textStyle="normal"
+            android:layout_marginEnd="74dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/page11_2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ImageButton
             android:id="@+id/btn_prev"

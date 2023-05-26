@@ -27,17 +27,18 @@
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/asset_button_prev"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_home"
-        app:layout_constraintEnd_toStartOf="@id/btn_home"
-        app:layout_constraintTop_toTopOf="@+id/btn_home" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_next"
+        app:layout_constraintEnd_toStartOf="@id/btn_next"
+        app:layout_constraintTop_toTopOf="@+id/btn_next" />
 
     <ImageButton
-        android:id="@+id/btn_home"
+        android:id="@+id/btn_next"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/asset_btn_home"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/asset_btn_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

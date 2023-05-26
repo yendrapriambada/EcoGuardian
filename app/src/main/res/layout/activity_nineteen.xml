@@ -44,7 +44,7 @@
             android:paddingTop="30dp"
             android:paddingEnd="70dp"
             android:paddingBottom="30dp"
-            android:text="@string/tanah_longsor_atau_sering_disebut_gerakan_tanah_merupakan_suatu_peristiwa_geologi_yang_terjadi_akibat_pergerakan_masa_batuan_atau_tanah"
+            android:text="@string/tanah_longsor_deskripsi"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 

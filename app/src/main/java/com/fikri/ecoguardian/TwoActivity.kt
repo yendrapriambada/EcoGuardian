@@ -13,8 +13,6 @@ class TwoActivity : AppCompatActivity() {
         binding = ActivityTwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.tvKataPengantar.movementMethod = ScrollingMovementMethod()
-
         binding.apply {
             btnPrev.setOnClickListener {
                 Intent(this@TwoActivity, MainActivity::class.java).also {

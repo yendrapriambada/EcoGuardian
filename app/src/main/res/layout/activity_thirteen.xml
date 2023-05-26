@@ -30,65 +30,41 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView1"
-            style="@style/TextRegularPoppins"
+        <ImageView
+            android:id="@+id/textView"
             android:layout_width="0dp"
-            android:layout_height="270dp"
+            android:layout_height="200dp"
             android:layout_marginStart="32dp"
-            android:layout_marginEnd="-24dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="35dp"
-            android:paddingTop="30dp"
-            android:paddingEnd="45dp"
-            android:paddingBottom="30dp"
-            android:text="@string/gempa_bumi_desc"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/page13_1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-        <TextView
+        <ImageView
             android:id="@+id/textView2"
-            style="@style/TextRegularPoppins"
             android:layout_width="0dp"
-            android:layout_height="260dp"
-            android:layout_marginStart="-70dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="90dp"
-            android:paddingTop="40dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="40dp"
-            android:text="@string/ciri_gempa_bumi"
-            android:textStyle="normal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-        <TextView
-            android:id="@+id/tv_desc"
-            style="@style/TextRegularPoppins"
-            android:layout_width="0dp"
-            android:layout_height="170dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="-24dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="35dp"
-            android:paddingTop="20dp"
-            android:paddingEnd="45dp"
-            android:paddingBottom="20dp"
-            android:text="@string/penyebab_gempa_bumi"
-            android:textStyle="normal"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="74dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/page13_2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="-16dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/page13_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <ImageView
             android:id="@+id/img_gempa_bumi"
@@ -98,7 +74,7 @@
             android:background="@drawable/asset_gempa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <ImageButton
             android:id="@+id/btn_prev"

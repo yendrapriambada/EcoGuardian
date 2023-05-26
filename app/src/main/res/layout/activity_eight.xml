@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <include
+            android:id="@+id/include"
             layout="@layout/background"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -30,51 +31,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView1"
-            style="@style/TextRegularPoppins"
+        <ImageView
+            android:id="@+id/textView"
             android:layout_width="0dp"
-            android:layout_height="320dp"
+            android:layout_height="280dp"
             android:layout_marginStart="32dp"
-            android:layout_marginEnd="-24dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="35dp"
-            android:paddingTop="30dp"
-            android:paddingEnd="45dp"
-            android:paddingBottom="30dp"
-            android:text="@string/gunung_meletus_1"
-            android:textStyle="normal"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/page8_1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-        <TextView
-            android:id="@+id/textView2"
-            style="@style/TextRegularPoppins"
-            android:layout_width="0dp"
-            android:layout_height="270dp"
-            android:layout_marginStart="-70dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/asset_bg_note"
-            android:importantForAutofill="no"
-            android:justificationMode="inter_word"
-            android:paddingStart="90dp"
-            android:paddingTop="40dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="40dp"
-            android:text="@string/gunung_meletus_2"
-            android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView1"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <ImageView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="74dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/page8_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ImageView
             android:id="@+id/img_gunung_meletus"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="230dp"
             android:layout_margin="16dp"
+            android:scaleType="fitCenter"
             android:background="@drawable/asset_gunung_meletus"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
