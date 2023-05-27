@@ -27,12 +27,12 @@
     <string name="pencemaran_air_instruksi">Ayo tuliskan bagaimana pencemaran air dapat terjadi dan apa saja dampak yang ditimbulkan dari pencemaran air tersebut!</string>
     <string name="study">Mari Belajar</string>
     <string name="games">Mari Bermain</string>
-    <string name="question_page_four">apa di daerah sekitarmu terdapat perubahan lingkangan? ayo tuliskan apa saja yang menjadi faktor perubahan lingkungan!</string>
+    <string name="question_page_four">apa di daerah sekitarmu terdapat perubahan lingkungan? ayo tuliskan apa saja yang menjadi faktor perubahan lingkungan!</string>
     <string name="amati_gambar">Amatilah gambar di atas!</string>
     <string name="gunung_meletus_1">Peristiwa gunung meletus merupakan salah satu kejadian alam yang cukup lumrah terjadi di kawasan yang terdapat banyak gunung berapi, khususnya Indonesia. Hal ini karena Indonesia memiliki cukup banyak gunung berapi aktif yang tersebar di seluruh wilayah Indonesia. Maka dari itu tak heran jika kenampakan alam di Indonesia selalu berubah seiring berjalannya waktu.</string>
     <string name="gunung_meletus_2">Gunung meletus atau yang juga disebut dengan peristiwa erupsi ini merupakan aktivitas gunung berapi yang dapat menyebabkan perubahan bentuk muka bumi. Hal ini terjadi akibat material yang disemburkan saat terjadi gunung meletus.</string>
     <string name="gunung_meletus">GUNUNG MELETUS</string>
-    <string name="gunung_meletus_instruksi">Ayo tuliskan bagaimana gunung berapi dapat melutus dan apa saja dampak yang ditimbulkan dari gunung meletus tersebut!</string>
+    <string name="gunung_meletus_instruksi">Ayo tuliskan bagaimana gunung berapi dapat meletus dan apa saja dampak yang ditimbulkan dari gunung meletus tersebut!</string>
     <string name="dampak_letusan_gunung">Dampak Letusan Gunung Berapi terhadap Lingkungan</string>
     <string name="dampak_positif_letusan_gunung_1"><b>Dampak Positif Letusan Gunung Api bagi Manusia</b>\n<ol type="1">\n<li>Tanah yang dilewati oleh abu vulkanis akibat meletusnya gunung api tersebut, membuat tanahnya menjadi subur dan sangat baik untuk bercocok tanam</li>\n<li>Membuka lapangan pekerjaan baru untuk warga sekitar pegunungan yaitu sebagai penambang pasir</li>\n<li>Dampak meletusnya gunung api adalah munculnya geyser atau sumber mata air panas yang bagus untuk kesehatan kulit.</li>\n<li>Batu yang meluap tatkala terjadi letusan gunung api berguna untuk bahan bangunan.</li>\n</ol></string>
     <string name="dampak_positif_letusan_gunung_2"><b>Dampak Positif Letusan Gunung Api bagi Lingkungan</b>\n<ol type="1">\n<li>Menjadikan tanah sekitar letusan gunung tambah subur</li>\n<li>Menghasilkan batu dan pasir bermutu baik untuk bahan bangunan</li>\n<li>Energi panas yang berasal dari bumi berguna untuk pembangkit tenaga listrik</li>\n<li>Sumber mineral, diantaranya gypsum, belerang, zeolit, dan lainnya</li>\n<li>Sumber mata air bagi pertanian, peternakan, dan sebagainya</li>\n</ol></string>
@@ -50,14 +50,12 @@
     <string name="dampak_gempa_bumi">Dampak Gempa Bumi terhadap Lingkungan</string>
     <string name="dampak_positif_gempa_bumi"><b>Dampak Positif Gempa Bumi Api bagi Manusia dan Lingkungan</b>\n<ol type="1">\n<li>Gempa bumi yang membuat mineral dan batu mulia naik ke permukaan sehingga lebih mudah untuk ditambang.</li>\n<li>Gempa bumi yang membuat daratan-daratan baru dan pelebaran pantai.</li>\n<li>Meningkatkan kewaspadaan manusia.</li>\n<li>Memicu ilmuwan-ilmuwan untuk menciptakan teknologi baru yang bisa meminimalisir kemungkinan terjadinya bencana alam.</li>\n</ol></string>
     <string name="dampak_negatif_gempa_bumi"><b>Dampak Negatif Gempa Bumi Manusia dan Lingkungan</b>\n<ol type="1">\n<li>Tanah longsor</li>\n<li>Runtuhan batuan</li>\n<li>Retakan tanah</li>\n<li>Tsunami</li>\n</ol></string>
-    <string name="permainan">Dalam permainan ini, kamu perlu menjawab pertanyaan dengan benar untuk menghindari kerusakan kota akibat Tsunami dengan cara menanam pohon mangrove! Setiap pertanyaan yang terjawab dengan benar mempunyai nilai sebagai berikut:\n\n1 soal PG = 1 Pohon\n1 soal Esai = 2 Pohon\n\nAyo selamatkan kota dengan menanam pohon mangrove di sekitar pantai!</string>
+    <string name="permainan">Dalam permainan ini, kamu perlu menjawab pertanyaan dengan benar untuk menghindari kerusakan kota akibat Tsunami dengan cara menanam pohon mangrove! Setiap pertanyaan yang terjawab dengan benar mempunyai nilai sebagai berikut:\n\n1 soal PG = 1 Pohon\n1 soal Esai = 2 Pohon\n\nWaktu pengerjaan:\n1 soal PG = 30 detik\n1 soal Esai = 2 menit\n\nAyo selamatkan kota dengan menanam pohon mangrove di sekitar pantai!</string>
     <string name="instruksi_permainan">INSTRUKSI\nPERMAINAN</string>
     <string name="hasil_permainan">Hasil Permainan</string>
     <string name="persentase_kerusakan_bangunan_sebesar">Persentase kerusakan bangunan sebesar</string>
     <string name="jawab_disini">Jawab disini . . .</string>
     <string name="submit">Submit</string>
-    <string name="tanggapan_siswa_bencana_alam">Sebelumnya kita sudah melihat bencana alam yang terjadi. Coba tuliskan perasaan kalian ketika melihat bencana beserta dampak yang ditimbulkan tersebut!</string>
-    <string name="tanggapan_siswa_bencana_akibat_manusia">Kita sudah melihat bencana alam yang terjadi yang disebabkan oleh manusia. Bagaimana perasaan kalian ketika melihat bencana yang ditimbulkan oleh manusia tersebut?</string>
 
     <string-array name="questions">
         <item name="question1">Salah satu pencemaran lingkungan adalah pencemaran air. Apa yang menyebabkan pencemaran air?</item>

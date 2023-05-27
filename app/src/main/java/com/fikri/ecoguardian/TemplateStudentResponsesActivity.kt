@@ -21,16 +21,12 @@ class TemplateStudentResponsesActivity : AppCompatActivity() {
         val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
         val editor = sharedPref.edit()
 
-        val text = intent.getStringExtra(SixActivity.EXTRA_TEXT)
-
-        binding.apply {
-            tvTextTitle.text = text
-        }
-
         when (intent.getIntExtra(EXTRA_FROM, 0)) {
             20 -> {
                 val dataPageTwentyOne = sharedPref.getString("pageTwentyOne", "default").toString()
                 if (dataPageTwentyOne != "default") binding.editText.setText(dataPageTwentyOne)
+
+                binding.npcTitle.setImageResource(R.drawable.asset_21)
 
                 atribut = "pageTwentyOne"
                 intentPrev = Intent(this@TemplateStudentResponsesActivity, TwentyActivity::class.java)
@@ -39,6 +35,8 @@ class TemplateStudentResponsesActivity : AppCompatActivity() {
             27 -> {
                 val dataPageTwentyEight = sharedPref.getString("pageTwentyEight", "default").toString()
                 if (dataPageTwentyEight != "default") binding.editText.setText(dataPageTwentyEight)
+
+                binding.npcTitle.setImageResource(R.drawable.asset_28)
 
                 atribut = "pageTwentyEight"
                 intentPrev = Intent(this@TemplateStudentResponsesActivity, TwentySevenActivity::class.java)

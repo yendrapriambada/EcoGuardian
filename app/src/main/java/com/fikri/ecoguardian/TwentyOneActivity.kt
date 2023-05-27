@@ -16,7 +16,6 @@ class TwentyOneActivity : AppCompatActivity() {
         binding.apply {
             btnPrev.setOnClickListener {
                 Intent(this@TwentyOneActivity, TemplateStudentResponsesActivity::class.java).also {
-                    it.putExtra(SixActivity.EXTRA_TEXT, getString(R.string.tanggapan_siswa_bencana_alam))
                     it.putExtra(SixActivity.EXTRA_FROM, 20)
                     startActivity(it)
                 }
