@@ -45,16 +45,19 @@
             android:paddingEnd="70dp"
             android:paddingBottom="30dp"
             android:text="@string/tanah_longsor_deskripsi"
+            android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
         <ImageView
             android:id="@+id/img_penyebab"
-            android:layout_width="400dp"
-            android:layout_height="600dp"
-            android:layout_marginStart="-30dp"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="-20dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
             android:background="@drawable/asset_tv_penyebab_longsor"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 

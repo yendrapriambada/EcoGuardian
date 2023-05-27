@@ -33,11 +33,10 @@
         <ImageView
             android:id="@+id/textView4"
             android:layout_width="0dp"
-            android:layout_height="270dp"
-            android:layout_marginStart="32dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:src="@drawable/asset_23_1"
-            android:scaleType="fitEnd"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
@@ -45,11 +44,10 @@
         <ImageView
             android:id="@+id/textView5"
             android:layout_width="0dp"
-            android:layout_height="400dp"
+            android:layout_height="380dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="40dp"
             android:src="@drawable/asset_23_2"
-            android:scaleType="fitStart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
