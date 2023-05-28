@@ -32,34 +32,31 @@
 
         <ImageView
             android:id="@+id/textView"
-            android:layout_width="0dp"
+            android:layout_width="390dp"
             android:layout_height="200dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
-            android:src="@drawable/page13_1"
+            android:layout_marginEnd="-30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:srcCompat="@drawable/page13_1" />
 
         <ImageView
             android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+            android:layout_width="356dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="-5dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="50dp"
             android:src="@drawable/page13_2"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ImageView
             android:id="@+id/textView3"
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="32dp"
+            android:layout_width="358dp"
+            android:layout_height="143dp"
+            android:layout_marginEnd="-10dp"
             android:src="@drawable/page13_3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <ImageView

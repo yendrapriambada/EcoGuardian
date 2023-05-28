@@ -32,25 +32,23 @@
 
         <ImageView
             android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="160dp"
-            android:layout_marginStart="24dp"
+            android:layout_width="372dp"
+            android:layout_height="147dp"
             android:layout_marginTop="8dp"
-            android:src="@drawable/asset_25_1"
+            android:layout_marginEnd="-20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:srcCompat="@drawable/asset_25_1" />
 
         <ImageView
             android:id="@+id/textView5"
-            android:layout_width="0dp"
-            android:layout_height="450dp"
+            android:layout_width="388dp"
+            android:layout_height="464dp"
+            android:layout_marginStart="-25dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/asset_tv_pencemaran_udara"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/asset_tv_pencemaran_udara" />
 
         <ImageButton
             android:id="@+id/btn_prev"
