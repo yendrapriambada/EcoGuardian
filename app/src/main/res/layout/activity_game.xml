@@ -35,6 +35,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/mangrove1"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="-10dp"
@@ -47,6 +48,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove2"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="28dp"
@@ -58,6 +60,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove3"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="64dp"
@@ -69,6 +72,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove4"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="104dp"
@@ -80,6 +84,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove5"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="140dp"
@@ -91,6 +96,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="172dp"
@@ -102,6 +108,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove7"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="200dp"
@@ -113,6 +120,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove8"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="220dp"
@@ -124,6 +132,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove9"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="232dp"
@@ -135,6 +144,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove10"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="260dp"
@@ -146,6 +156,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove11"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="272dp"
@@ -157,6 +168,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove12"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="24dp"
@@ -168,6 +180,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove13"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="64dp"
@@ -179,6 +192,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove14"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="104dp"
@@ -190,6 +204,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove15"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="148dp"
@@ -201,6 +216,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove16"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="164dp"
@@ -212,6 +228,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove17"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="192dp"
@@ -223,6 +240,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove18"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="208dp"
@@ -234,6 +252,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove19"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="220dp"
@@ -245,6 +264,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove20"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="220dp"
@@ -256,6 +276,7 @@
         tools:visibility="visible" />
 
     <ImageView
+        android:id="@+id/mangrove21"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="116dp"
@@ -288,6 +309,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/tv_timer"
                 style="@style/TextRegularPoppins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -345,6 +367,7 @@
                 android:alpha="0"/>
 
             <Button
+                android:id="@+id/btn_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -397,6 +420,7 @@
                 tools:alpha="1" />
 
             <Button
+                android:id="@+id/btn_opsi_d"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -410,6 +434,7 @@
                 tools:alpha="1" />
 
             <ImageView
+                android:id="@+id/imageView5"
                 android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="-60dp"
