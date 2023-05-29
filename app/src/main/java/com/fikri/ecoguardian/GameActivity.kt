@@ -14,6 +14,7 @@ import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityGameBinding
 import java.util.*
@@ -35,8 +36,6 @@ class GameActivity : AppCompatActivity() {
     private var progressDialog: ProgressDialog? = null
     private lateinit var countDownTimer: CountDownTimer
     private var timeLeftInMillis: Long = 30000
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityGameBinding.inflate(layoutInflater)
@@ -84,6 +83,18 @@ class GameActivity : AppCompatActivity() {
                 essayAlgorithm()
             }
         }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
+    }
+
+    private fun backIntent() {
+        Intent(this@GameActivity, GameInstructionsActivity::class.java).also {
+            startActivity(it)
+        }
+        finish()
     }
 
     private fun startTimer(state: Int) {
@@ -97,11 +108,10 @@ class GameActivity : AppCompatActivity() {
             override fun onFinish() {
                 // Timer finished
                 // Add your desired logic here
-                if (state != 2){
+                if (state != 2) {
                     jawabanUser.add("e")
                     quizAlgorithm()
-                }
-                else{
+                } else {
                     jawabanUserEssay.add("waktu habis!")
                     essayAlgorithm()
                 }
@@ -357,4 +367,6 @@ class GameActivity : AppCompatActivity() {
     private fun hideLoading() {
         progressDialog?.dismiss()
     }
+
+
 }

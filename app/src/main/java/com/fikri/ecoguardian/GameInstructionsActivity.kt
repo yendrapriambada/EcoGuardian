@@ -2,10 +2,9 @@ package com.fikri.ecoguardian
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityGameInstructionsBinding
-import com.fikri.ecoguardian.databinding.ActivityTwoBinding
 
 class GameInstructionsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGameInstructionsBinding
@@ -16,17 +15,27 @@ class GameInstructionsActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@GameInstructionsActivity, ThreeActivity::class.java).also {
-                    startActivity(it)
-                }
+                backIntent()
             }
 
             btnNext.setOnClickListener {
                 Intent(this@GameInstructionsActivity, GameActivity::class.java).also {
                     startActivity(it)
                 }
+                finish()
             }
         }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
+    }
 
+    private fun backIntent() {
+        Intent(this@GameInstructionsActivity, ThreeActivity::class.java).also {
+            startActivity(it)
+        }
+        finish()
     }
 }

@@ -161,7 +161,6 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/btn_play"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -172,7 +171,6 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <ImageButton
-        android:id="@+id/btn_mute"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"

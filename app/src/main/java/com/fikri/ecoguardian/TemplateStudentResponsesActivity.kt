@@ -1,8 +1,9 @@
 package com.fikri.ecoguardian
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_FROM
 import com.fikri.ecoguardian.databinding.ActivityTemplateStudentResponsesBinding
 
@@ -29,34 +30,49 @@ class TemplateStudentResponsesActivity : AppCompatActivity() {
                 binding.npcTitle.setImageResource(R.drawable.asset_21)
 
                 atribut = "pageTwentyOne"
-                intentPrev = Intent(this@TemplateStudentResponsesActivity, TwentyActivity::class.java)
-                intentNext = Intent(this@TemplateStudentResponsesActivity, TwentyOneActivity::class.java)
+                intentPrev =
+                    Intent(this@TemplateStudentResponsesActivity, TwentyActivity::class.java)
+                intentNext =
+                    Intent(this@TemplateStudentResponsesActivity, TwentyOneActivity::class.java)
             }
             27 -> {
-                val dataPageTwentyEight = sharedPref.getString("pageTwentyEight", "default").toString()
+                val dataPageTwentyEight =
+                    sharedPref.getString("pageTwentyEight", "default").toString()
                 if (dataPageTwentyEight != "default") binding.editText.setText(dataPageTwentyEight)
 
                 binding.npcTitle.setImageResource(R.drawable.asset_28)
 
                 atribut = "pageTwentyEight"
-                intentPrev = Intent(this@TemplateStudentResponsesActivity, TwentySevenActivity::class.java)
-                intentNext = Intent(this@TemplateStudentResponsesActivity, TwentyEightActivity::class.java)
+                intentPrev =
+                    Intent(this@TemplateStudentResponsesActivity, TwentySevenActivity::class.java)
+                intentNext =
+                    Intent(this@TemplateStudentResponsesActivity, TwentyEightActivity::class.java)
             }
         }
 
         binding.apply {
             btnPrev.setOnClickListener {
-                startActivity(intentPrev)
+                backIntent()
             }
 
             btnNext.setOnClickListener {
-                startActivity(intentNext)
-
                 // savePref
                 editor.putString(atribut, binding.editText.text.toString().trim())
                 editor.apply()
+
+                startActivity(intentNext)
+                finish()
             }
         }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
+    }
 
+    private fun backIntent() {
+        startActivity(intentPrev)
+        finish()
     }
 }

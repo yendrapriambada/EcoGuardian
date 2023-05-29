@@ -7,7 +7,6 @@
     tools:context=".Game2Activity">
 
     <include
-        android:id="@+id/include5"
         layout="@layout/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,7 +25,6 @@
 
 
     <ImageView
-        android:id="@+id/imageView8"
         android:layout_width="0dp"
         android:layout_height="210dp"
         android:layout_marginTop="8dp"

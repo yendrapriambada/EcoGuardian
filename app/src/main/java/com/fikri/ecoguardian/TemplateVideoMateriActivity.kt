@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.MediaController
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_DESC
 import com.fikri.ecoguardian.SixActivity.Companion.EXTRA_FROM
@@ -126,20 +127,31 @@ class TemplateVideoMateriActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                startActivity(intentPrev)
+                backIntent()
             }
 
             btnNext.setOnClickListener {
-                startActivity(intentNext)
-
                 // savePref
                 editor.putString(atribut, binding.editText.text.toString().trim())
                 editor.apply()
+
+                startActivity(intentNext)
+                finish()
             }
         }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
     }
 
-    private fun setupMusic(){
+    private fun backIntent() {
+        startActivity(intentPrev)
+        finish()
+    }
+
+    private fun setupMusic() {
         val action = "STOP"
         val myService = Intent(this@TemplateVideoMateriActivity, MusicService::class.java)
         myService.action = action

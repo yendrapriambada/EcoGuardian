@@ -2,6 +2,7 @@ package com.fikri.ecoguardian
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityEightBinding
 
@@ -17,24 +18,35 @@ class EightActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@EightActivity, TemplateVideoMateriActivity::class.java).also {
-                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.gunung)
-                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.gunung_meletus))
-                    it.putExtra(
-                        SixActivity.EXTRA_DESC,
-                        getString(R.string.gunung_meletus_instruksi)
-                    )
-                    it.putExtra(SixActivity.EXTRA_FROM, 6)
-                    startActivity(it)
-                }
+                backIntent()
             }
 
             btnNext.setOnClickListener {
                 Intent(this@EightActivity, NineActivity::class.java).also {
                     startActivity(it)
                 }
+                finish()
             }
         }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
+    }
+
+    private fun backIntent() {
+        Intent(this@EightActivity, TemplateVideoMateriActivity::class.java).also {
+            it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.gunung)
+            it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.gunung_meletus))
+            it.putExtra(
+                SixActivity.EXTRA_DESC,
+                getString(R.string.gunung_meletus_instruksi)
+            )
+            it.putExtra(SixActivity.EXTRA_FROM, 6)
+            startActivity(it)
+        }
+        finish()
     }
 
     private fun setupMusic(){

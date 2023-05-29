@@ -2,6 +2,7 @@ package com.fikri.ecoguardian
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityFourteenBinding
 
@@ -15,9 +16,7 @@ class FourteenActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@FourteenActivity, ThirteenActivity::class.java).also {
-                    startActivity(it)
-                }
+                backIntent()
             }
 
             btnNext.setOnClickListener {
@@ -28,7 +27,20 @@ class FourteenActivity : AppCompatActivity() {
                     it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.tsunami)
                     startActivity(it)
                 }
+                finish()
             }
         }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
+    }
+
+    private fun backIntent() {
+        Intent(this@FourteenActivity, ThirteenActivity::class.java).also {
+            startActivity(it)
+        }
+        finish()
     }
 }

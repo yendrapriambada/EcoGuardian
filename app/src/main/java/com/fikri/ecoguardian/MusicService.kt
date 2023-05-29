@@ -4,7 +4,6 @@ import android.app.Service
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.IBinder
-import android.widget.Toast
 
 class MusicService : Service() {
 
@@ -22,13 +21,13 @@ class MusicService : Service() {
     }
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
-        if(intent.action == "PLAY") {
-            if(!mMediaPlayer!!.isPlaying) {
+        if (intent.action == "PLAY") {
+            if (!mMediaPlayer!!.isPlaying) {
                 mMediaPlayer!!.start()
 //                Toast.makeText(applicationContext, "Musik nyala", Toast.LENGTH_SHORT).show()
             }
         }
-        if(intent.action == "STOP"){
+        if (intent.action == "STOP") {
             stopService(intent)
 //            Toast.makeText(applicationContext, "Musik berhenti", Toast.LENGTH_SHORT).show()
         }

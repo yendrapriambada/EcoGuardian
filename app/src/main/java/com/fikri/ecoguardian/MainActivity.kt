@@ -6,7 +6,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityMainBinding
 
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var isMusicPlay: Boolean = true
@@ -21,16 +20,17 @@ class MainActivity : AppCompatActivity() {
             Intent(this@MainActivity, TwoActivity::class.java).also {
                 startActivity(it)
             }
+            finish()
         }
     }
 
-    private fun setupMusic(){
+    private fun setupMusic() {
         val action = "PLAY"
         val myService = Intent(this@MainActivity, MusicService::class.java)
         myService.action = action
         startService(myService)
 
-        if(isMusicPlay) {
+        if (isMusicPlay) {
             showPlayButton(true)
         } else {
             showPlayButton(false)
@@ -58,8 +58,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    private fun showPlayButton(playing: Boolean){
-        if(playing) {
+
+    private fun showPlayButton(playing: Boolean) {
+        if (playing) {
             binding.apply {
                 btnMute.visibility = View.GONE
                 btnPlay.visibility = View.VISIBLE
@@ -71,9 +72,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
     override fun onResume() {
         super.onResume()
-        if(isMusicPlay){
+        if (isMusicPlay) {
             showPlayButton(true)
         } else {
             showPlayButton(false)

@@ -2,6 +2,7 @@ package com.fikri.ecoguardian
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityTwentySevenBinding
 
@@ -17,28 +18,42 @@ class TwentySevenActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@TwentySevenActivity, TemplateVideoMateriActivity::class.java).also {
-                    it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.pencemaran_air))
-                    it.putExtra(
-                        SixActivity.EXTRA_DESC,
-                        getString(R.string.pencemaran_air_instruksi)
-                    )
-                    it.putExtra(SixActivity.EXTRA_FROM, 25)
-                    it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.sampah)
-                    startActivity(it)
-                }
+                backIntent()
             }
 
             btnNext.setOnClickListener {
-                Intent(this@TwentySevenActivity, TemplateStudentResponsesActivity::class.java).also {
+                Intent(
+                    this@TwentySevenActivity,
+                    TemplateStudentResponsesActivity::class.java
+                ).also {
                     it.putExtra(SixActivity.EXTRA_FROM, 27)
                     startActivity(it)
                 }
+                finish()
             }
         }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
     }
 
-    private fun setupMusic(){
+    private fun backIntent() {
+        Intent(this@TwentySevenActivity, TemplateVideoMateriActivity::class.java).also {
+            it.putExtra(SixActivity.EXTRA_TITLE, getString(R.string.pencemaran_air))
+            it.putExtra(
+                SixActivity.EXTRA_DESC,
+                getString(R.string.pencemaran_air_instruksi)
+            )
+            it.putExtra(SixActivity.EXTRA_FROM, 25)
+            it.putExtra(SixActivity.EXTRA_VIDEO, R.raw.sampah)
+            startActivity(it)
+        }
+        finish()
+    }
+
+    private fun setupMusic() {
         val action = "PLAY"
         val myService = Intent(this@TwentySevenActivity, MusicService::class.java)
         myService.action = action

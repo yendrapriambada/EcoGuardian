@@ -8,13 +8,13 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.fikri.ecoguardian.databinding.ActivityGame2Binding
 
 class Game2Activity : AppCompatActivity() {
     private lateinit var binding: ActivityGame2Binding
     private val trashList = mutableListOf<Pair<View, Rect>>()
-    private var collisionEventHandled = false
     private var isTouchingView1 = false
     private var isMovingView1 = false
     private var isAlreadyThrownAway1 = false
@@ -69,8 +69,6 @@ class Game2Activity : AppCompatActivity() {
     private var y: Float = 0.0f
     private var dx: Float = 0.0f
     private var dy: Float = 0.0f
-    private var tempX: Float = 0.0f
-    private var tempY: Float = 0.0f
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,6 +76,17 @@ class Game2Activity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupTrashList()
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backIntent()
+            }
+        })
+    }
+
+    private fun backIntent() {
+        Intent(this@Game2Activity, ThreeActivity::class.java).also { startActivity(it) }
+        finish()
     }
 
     private fun setupTrashList() {
@@ -91,7 +100,6 @@ class Game2Activity : AppCompatActivity() {
             val trashRect = Rect()
             trashList.add(trashView to trashRect)
         }
-
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
@@ -227,12 +235,15 @@ class Game2Activity : AppCompatActivity() {
                 rubbishBinGreenRect.left = binding.trashgreen.x.toInt()
                 rubbishBinGreenRect.top = binding.trashgreen.y.toInt()
                 rubbishBinGreenRect.right = binding.trashgreen.x.toInt() + binding.trashgreen.width
-                rubbishBinGreenRect.bottom = binding.trashgreen.y.toInt() + binding.trashgreen.height
+                rubbishBinGreenRect.bottom =
+                    binding.trashgreen.y.toInt() + binding.trashgreen.height
 
                 rubbishBinYellowRect.left = binding.trashyellow.x.toInt()
                 rubbishBinYellowRect.top = binding.trashyellow.y.toInt()
-                rubbishBinYellowRect.right = binding.trashyellow.x.toInt() + binding.trashyellow.width
-                rubbishBinYellowRect.bottom = binding.trashyellow.y.toInt() + binding.trashyellow.height
+                rubbishBinYellowRect.right =
+                    binding.trashyellow.x.toInt() + binding.trashyellow.width
+                rubbishBinYellowRect.bottom =
+                    binding.trashyellow.y.toInt() + binding.trashyellow.height
 
                 if (isTouchingView1) {
                     isTouchingView1 = false
@@ -249,7 +260,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateGreen.toString())
 
-                    if (stateGreen && !stateYellow){
+                    if (stateGreen && !stateYellow) {
                         binding.apel.visibility = View.GONE
                         isAlreadyThrownAway1 = true
                     }
@@ -268,7 +279,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateGreen.toString())
 
-                    if (stateGreen && !stateYellow){
+                    if (stateGreen && !stateYellow) {
                         binding.pizza.visibility = View.GONE
                         isAlreadyThrownAway2 = true
                     }
@@ -287,7 +298,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateGreen.toString())
 
-                    if (stateGreen && !stateYellow){
+                    if (stateGreen && !stateYellow) {
                         binding.paper.visibility = View.GONE
                         isAlreadyThrownAway3 = true
                     }
@@ -306,7 +317,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateYellow.toString())
 
-                    if (!stateGreen && stateYellow){
+                    if (!stateGreen && stateYellow) {
                         binding.straw.visibility = View.GONE
                         isAlreadyThrownAway4 = true
                     }
@@ -325,7 +336,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateYellow.toString())
 
-                    if (!stateGreen && stateYellow){
+                    if (!stateGreen && stateYellow) {
                         binding.botol.visibility = View.GONE
                         isAlreadyThrownAway5 = true
                     }
@@ -344,7 +355,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateYellow.toString())
 
-                    if (!stateGreen && stateYellow){
+                    if (!stateGreen && stateYellow) {
                         binding.kaleng.visibility = View.GONE
                         isAlreadyThrownAway6 = true
                     }
@@ -363,7 +374,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateYellow.toString())
 
-                    if (!stateGreen && stateYellow){
+                    if (!stateGreen && stateYellow) {
                         binding.karton.visibility = View.GONE
                         isAlreadyThrownAway7 = true
                     }
@@ -382,7 +393,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateYellow.toString())
 
-                    if (!stateGreen && stateYellow){
+                    if (!stateGreen && stateYellow) {
                         binding.kresek.visibility = View.GONE
                         isAlreadyThrownAway8 = true
                     }
@@ -401,7 +412,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateGreen.toString())
 
-                    if (stateGreen && !stateYellow){
+                    if (stateGreen && !stateYellow) {
                         binding.roti.visibility = View.GONE
                         isAlreadyThrownAway9 = true
                     }
@@ -420,7 +431,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateGreen.toString())
 
-                    if (stateGreen && !stateYellow){
+                    if (stateGreen && !stateYellow) {
                         binding.pisang.visibility = View.GONE
                         isAlreadyThrownAway10 = true
                     }
@@ -439,7 +450,7 @@ class Game2Activity : AppCompatActivity() {
 
                     Log.d("Has Collision:", stateGreen.toString())
 
-                    if (stateGreen && !stateYellow){
+                    if (stateGreen && !stateYellow) {
                         binding.sayur.visibility = View.GONE
                         isAlreadyThrownAway11 = true
                     }
@@ -447,11 +458,17 @@ class Game2Activity : AppCompatActivity() {
 
                 if (isAlreadyThrownAway1 && isAlreadyThrownAway2 && isAlreadyThrownAway3 && isAlreadyThrownAway4 &&
                     isAlreadyThrownAway5 && isAlreadyThrownAway6 && isAlreadyThrownAway7 && isAlreadyThrownAway8 &&
-                    isAlreadyThrownAway9 && isAlreadyThrownAway10 && isAlreadyThrownAway11) {
-                    Toast.makeText(this, "selamat kamu berhasil membantu flora untuk membersihkan sampah sesuai jenisnya", Toast.LENGTH_SHORT).show()
+                    isAlreadyThrownAway9 && isAlreadyThrownAway10 && isAlreadyThrownAway11
+                ) {
+                    Toast.makeText(
+                        this,
+                        "selamat kamu berhasil membantu flora untuk membersihkan sampah sesuai jenisnya",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     Intent(this@Game2Activity, GameInstructionsActivity::class.java).also {
                         startActivity(it)
                     }
+                    finish()
                 }
             }
         }
